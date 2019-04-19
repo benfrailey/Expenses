@@ -12,10 +12,6 @@ import CoreData
 
 @objc(Category)
 public class Category: NSManagedObject {
-
-    var expenses: [Expense]? {
-        return self.rawExpenses?.array as? [Expense]
-    }
     
     convenience init?(title: String) {
         let appDelegate = UIApplication.shared.delegate as? AppDelegate

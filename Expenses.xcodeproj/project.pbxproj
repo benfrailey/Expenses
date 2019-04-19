@@ -11,10 +11,6 @@
 		7B5B5A47226A4B670039D5AC /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B5A46226A4B670039D5AC /* CategoriesViewController.swift */; };
 		7B5B5A4C226A4D710039D5AC /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B5A48226A4D710039D5AC /* Category+CoreDataClass.swift */; };
 		7B5B5A4D226A4D710039D5AC /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B5A49226A4D710039D5AC /* Category+CoreDataProperties.swift */; };
-		7B5B5A4E226A4D710039D5AC /* Expense+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B5A4A226A4D710039D5AC /* Expense+CoreDataClass.swift */; };
-		7B5B5A4F226A4D710039D5AC /* Expense+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5B5A4B226A4D710039D5AC /* Expense+CoreDataProperties.swift */; };
-		FE4382E61FD0B8FD000FACCD /* ExpensesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */; };
-		FE4382E81FD0B917000FACCD /* SingleExpenseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */; };
 		FEEEA2CC1FD0B6A200D1F554 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2CB1FD0B6A200D1F554 /* AppDelegate.swift */; };
 		FEEEA2D11FD0B6A200D1F554 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FEEEA2CF1FD0B6A200D1F554 /* Main.storyboard */; };
 		FEEEA2D41FD0B6A200D1F554 /* Expenses.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FEEEA2D21FD0B6A200D1F554 /* Expenses.xcdatamodeld */; };
@@ -46,10 +42,6 @@
 		7B5B5A46226A4B670039D5AC /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		7B5B5A48226A4D710039D5AC /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
 		7B5B5A49226A4D710039D5AC /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		7B5B5A4A226A4D710039D5AC /* Expense+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataClass.swift"; sourceTree = "<group>"; };
-		7B5B5A4B226A4D710039D5AC /* Expense+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Expense+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesViewController.swift; sourceTree = "<group>"; };
-		FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleExpenseViewController.swift; sourceTree = "<group>"; };
 		FEEEA2C81FD0B6A200D1F554 /* Expenses.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Expenses.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FEEEA2CB1FD0B6A200D1F554 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FEEEA2D01FD0B6A200D1F554 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -115,11 +107,7 @@
 			children = (
 				7B5B5A48226A4D710039D5AC /* Category+CoreDataClass.swift */,
 				7B5B5A49226A4D710039D5AC /* Category+CoreDataProperties.swift */,
-				7B5B5A4A226A4D710039D5AC /* Expense+CoreDataClass.swift */,
-				7B5B5A4B226A4D710039D5AC /* Expense+CoreDataProperties.swift */,
 				FEEEA2CB1FD0B6A200D1F554 /* AppDelegate.swift */,
-				FE4382E51FD0B8FD000FACCD /* ExpensesViewController.swift */,
-				FE4382E71FD0B917000FACCD /* SingleExpenseViewController.swift */,
 				7B5B5A44226A4B4D0039D5AC /* NewCategoryViewController.swift */,
 				7B5B5A46226A4B670039D5AC /* CategoriesViewController.swift */,
 				FEEEA2CF1FD0B6A200D1F554 /* Main.storyboard */,
@@ -217,15 +205,18 @@
 				TargetAttributes = {
 					FEEEA2C71FD0B6A200D1F554 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					FEEEA2DE1FD0B6A200D1F554 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FEEEA2C71FD0B6A200D1F554;
 					};
 					FEEEA2E91FD0B6A300D1F554 = {
 						CreatedOnToolsVersion = 9.1;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = FEEEA2C71FD0B6A200D1F554;
 					};
@@ -284,14 +275,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FEEEA2D41FD0B6A200D1F554 /* Expenses.xcdatamodeld in Sources */,
-				7B5B5A4E226A4D710039D5AC /* Expense+CoreDataClass.swift in Sources */,
 				FEEEA2CC1FD0B6A200D1F554 /* AppDelegate.swift in Sources */,
 				7B5B5A4C226A4D710039D5AC /* Category+CoreDataClass.swift in Sources */,
 				7B5B5A47226A4B670039D5AC /* CategoriesViewController.swift in Sources */,
 				7B5B5A45226A4B4D0039D5AC /* NewCategoryViewController.swift in Sources */,
-				7B5B5A4F226A4D710039D5AC /* Expense+CoreDataProperties.swift in Sources */,
-				FE4382E61FD0B8FD000FACCD /* ExpensesViewController.swift in Sources */,
-				FE4382E81FD0B917000FACCD /* SingleExpenseViewController.swift in Sources */,
 				7B5B5A4D226A4D710039D5AC /* Category+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -468,7 +455,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.categoricalExpenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -483,7 +470,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.categoricalExpenses;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -498,7 +485,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.ExpensesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expenses.app/Expenses";
 			};
@@ -514,7 +501,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.ExpensesTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Expenses.app/Expenses";
 			};
@@ -529,7 +516,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.ExpensesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Expenses;
 			};
@@ -544,7 +531,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = online.techinnovator.ExpensesUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = Expenses;
 			};

@@ -20,6 +20,28 @@ class CategoriesViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
+    func deleteCategory(at indexPath: IndexPath) {
+        let category = categories[indexPath.row]
+        
+        guard let managedContext = category.managedObjectContext else {
+            return
+        }
+        
+        managedContext.delete(category)
+        
+        do {
+            try managedContext.save()
+            
+            categories.remove(at: indexPath.row)
+            
+            categoriesTableView.deleteRows(at: [indexPath], with: .automatic)
+        } catch {
+            print("Could not delete")
+            
+            categoriesTableView.deleteRows(at: [indexPath], with: .automatic)
+        }
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         guard let appDelegate = UIApplication.shared.delegate as? AppDelegate else{
             return
@@ -41,15 +63,6 @@ class CategoriesViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let destination = segue.destination as? ExpensesViewController,
-            let selectedRow = self.categoriesTableView.indexPathForSelectedRow?.row else {
-                return
-        }
-        
-        destination.category = categories[selectedRow]
-    }
 }
 
 extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
@@ -63,5 +76,12 @@ extension CategoriesViewController: UITableViewDataSource, UITableViewDelegate {
         
         cell.textLabel?.text = category.title
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            deleteCategory(at: indexPath)
+            
+        }
     }
 }
