@@ -24,7 +24,6 @@ public class Category: NSManagedObject {
         }
         
         self.init(entity: Category.entity(), insertInto: context)
-        
         self.title = title
     }
 }
