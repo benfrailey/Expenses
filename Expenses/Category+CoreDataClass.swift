@@ -2,7 +2,7 @@
 //  Category+CoreDataClass.swift
 //  Expenses
 //
-//  Created by Ben Frailey on 4/17/19.
+//  Created by Ben Frailey on 4/19/19.
 //  Copyright © 2019 Tech Innovator. All rights reserved.
 //
 //
@@ -12,6 +12,7 @@ import CoreData
 
 @objc(Category)
 public class Category: NSManagedObject {
+
     var expenses: [Expense]? {
         return self.rawExpenses?.array as? [Expense]
     }
@@ -24,6 +25,7 @@ public class Category: NSManagedObject {
         }
         
         self.init(entity: Category.entity(), insertInto: context)
+        
         self.title = title
     }
 }

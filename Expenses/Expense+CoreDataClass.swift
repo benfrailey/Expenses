@@ -2,7 +2,7 @@
 //  Expense+CoreDataClass.swift
 //  Expenses
 //
-//  Created by Ben Frailey on 4/17/19.
+//  Created by Ben Frailey on 4/19/19.
 //  Copyright © 2019 Tech Innovator. All rights reserved.
 //
 //

@@ -29,27 +29,20 @@ class SingleExpenseViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        nameTextField.resignFirstResponder()
-        amountTextField.resignFirstResponder()
-    }
-    
     @IBAction func saveExpense(_ sender: Any) {
         let name = nameTextField.text
         let amountText = amountTextField.text ?? ""
-        let amount = Double(amountText) ?? 0
+        let amount = Double(amountText) ?? 0.0
         let date = datePicker.date
         
-        if let expense = Expense(name: name, amount: amount, date: date) {
+        if let expense = Expense(name: name, amount: amount, date: date){
             category?.addToRawExpenses(expense)
-            print("HEY")
             
-            do{
+            do {
                 try expense.managedObjectContext?.save()
                 
                 self.navigationController?.popViewController(animated: true)
-                
-            } catch{
+            } catch {
                 print("Expense could not be created")
             }
         }
